@@ -19,7 +19,7 @@
  '?' at the end.  That is to separate the URL resource path from the paramaters that will follow.
  In our case, the parameters that will follow are the From, To, and Body of the message.
 */
-char url_header[] ="AT+HTTPPARA=\"URL\",\"http://relay-post-8447.twil.io/secondary-low-water?";
+char url_header[] ="AT+HTTPPARA=\"URL\",\"http://sndSMS-9557.twil.io/sendMessage?";
 
 /* 
  In the parameters, the '%20' represents a space.  https://www.fullhost.com/blog/what-does-20-mean-in-a-web-address/
