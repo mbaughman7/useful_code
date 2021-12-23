@@ -1,0 +1,15 @@
+   This sketch will send a single SMS message upon booting. 
+   DISCLAIMER: I am still learning and relatively new to programming.  If you are an experienced programmer,
+   you will almost certainly see something in my code that is sub-optimal.  Please let me know if you see things that I should be doing differently or more efficiently. 
+   
+   A Twilio account is required for this project, as is a Twilio phone number.  The phone
+   numbers are only a dollar or two per month, and messages/data are pay-as-you-go.  In order to use this sketch exactly as I use it, you
+   will need to use a Twilio SuperSIM SIM card.  Other SIM cards may work for you, and results may vary.
+   This sketch is intended to be used as a starting place for useful applications such as sending SMS messages upon input triggers like
+   button mashing or analog input thresholds.  I am using a DFRobot SIM7000A module, and I am in North America.
+   
+   First, you will need to go to twilio.com and sign up for an account.  Twilio has awesome resources, and I recommend following their guides for how to purchase 
+   and set up a phone number.
+   
+   
+   
