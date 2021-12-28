@@ -1,0 +1,35 @@
+// This code was written entirely by the Twilio support gurus Matt Jackson and Dan Pass.  They are wizards.
+// Copy and paste this Function to use as your Twilio Function.
+
+exports.handler = function (context, event, callback) {
+  // Make sure under Functions Settings tab:
+  // "Add my Twilio Credentials (ACCOUNT_SID) and (AUTH_TOKEN) to ENV" is CHECKED
+  console.log("invoked with",event);
+    
+      
+  const twilioClient = context.getTwilioClient();
+
+  // Pass in From, To, and Body as query parameters
+  // Example: https://x.x.x.x/<path>?From=%2b15095550100&To=%2b15105550100&Body=Hello%20World
+  // Note URL encoding above
+  let from = event.From;
+  // If passing in To, make sure to validate, to avoid sending SMS to unexpected locations
+  let to = event.To;
+  let body = event.Body;
+
+  twilioClient.messages
+    .create({
+      body: body,
+      to: to,
+      from: from,
+    })
+    .then((message) => {
+      console.log('SMS successfully sent');
+      console.log(message.sid);
+      return callback(null, 'success');
+    })
+    .catch((error) => {
+      console.log(error);
+      return callback(error);
+    });
+};
