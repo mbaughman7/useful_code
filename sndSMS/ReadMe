@@ -6,10 +6,11 @@
    numbers are only a dollar or two per month, and messages/data are pay-as-you-go.  In order to use this sketch exactly as I use it, you
    will need to use a Twilio SuperSIM SIM card.  Other SIM cards may work for you, and results may vary.
    This sketch is intended to be used as a starting place for useful applications such as sending SMS messages upon input triggers like
-   button mashing or analog input thresholds.  I am using a DFRobot SIM7000A module, and I am in North America.
+   button mashing or analog input thresholds.  For the SIM module, I am using a DFRobot SIM7000A module, and I am in North America.  For the microcontroller, 
+   I am using an Arduino MEGA. 
    
    First, you will need to go to twilio.com and sign up for an account.  Twilio has awesome resources, and I recommend following their guides for how to purchase 
-   and set up a phone number.
+   and set up a phone number, create your Function, and connect that Function to your phone number.
    
    
    
