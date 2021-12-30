@@ -12,5 +12,7 @@
    First, you will need to go to twilio.com and sign up for an account.  Twilio has awesome resources, and I recommend following their guides for how to purchase 
    and set up a phone number, create your Function, and connect that Function to your phone number.
    
+   Once you have an account and have purchased a Twilio phone number with SMS capabilities, it is time to create your Function.  
+   
    
    
