@@ -24,7 +24,7 @@ char url_header[] ="AT+HTTPPARA=\"URL\",\"http://sndSMS-9557.twil.io/sendMessage
 /* 
  In the parameters, the '%20' represents a space.  https://www.fullhost.com/blog/what-does-20-mean-in-a-web-address/
  and %2b represents a '+' sign.  
- The From number is my Twilio phone number.  It must be configured to be connected to your Twilio Function (described in the Readme on GitHub). 
+ The From number is my Twilio phone number.
  You MUST use a Twilio phone number as your From number.  Twilio will not be able to route a message out using this
  method from a non-Twilio phone number, as far as I know.
  The numbers as they are shown in formatted for the United States.  The "%2b" is a +, and the first number after them is the country
