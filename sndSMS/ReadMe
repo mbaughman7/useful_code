@@ -2,9 +2,13 @@
    DISCLAIMER: I am still learning and relatively new to programming.  If you are an experienced programmer,
    you will almost certainly see something in my code that is sub-optimal.  Please let me know if you see things that I should be doing differently or more efficiently. 
    
+   BIG IMPORTANT NOTE THAT YOU SHOULD READ BEFORE DOING STUFF!  This method of sending a message relies on a public endpoint that is NOT protected by a password.  This means 
+   that ANYONE with the address of your endpoint can send a POST request to it and send a message.  Obviously, this is not ideal.  I did it this way because 
+   using HTTP on a SIM module with an Arduino proved to be far easier than using HTTPS.  As I learn more, I'll be trying to adapt it to HTTPS.   
+   
    A Twilio account is required for this project, as is a Twilio phone number.  The phone
    numbers are only a dollar or two per month, and messages/data are pay-as-you-go.  In order to use this sketch exactly as I use it, you
-   will need to use a Twilio SuperSIM SIM card.  Other SIM cards may work for you, and results may vary.
+   will need to use a Twilio SuperSIM SIM card on the AT&T network.  Other SIM cards may work for you, but results may vary.
    This sketch is intended to be used as a starting place for useful applications such as sending SMS messages upon input triggers like
    button mashing or analog input thresholds.  For the SIM module, I am using a DFRobot SIM7000A module, and I am in North America.  For the microcontroller, 
    I am using an Arduino MEGA. 
@@ -12,7 +16,21 @@
    First, you will need to go to twilio.com and sign up for an account.  Twilio has awesome resources, and I recommend following their guides for how to purchase 
    and set up a phone number, create your Function, and connect that Function to your phone number.
    
-   Once you have an account and have purchased a Twilio phone number with SMS capabilities, it is time to create your Function.  
+   Once you have an account and have purchased a Twilio phone number with SMS capabilities, it is time to create your Function. Use 
+   the Twilio Function code I have posted in this repository, or you can make your own variation.  
+   The code I use was given to me by the Twilio wizards Matt Jackson and Dan Pass,
+   and it is very similar to the code found on Twilio's tutorial page for sending an SMS message: https://www.twilio.com/docs/runtime/quickstart/send-sms-and-mms
+   
+   After your phone number is activated and your Function is written and deployed, you are ready to try to send your first message.  I advise that you first send an HTTP POST to 
+   your Function endpoint using cURL or a free service like Postman.  
+   Makes sure that To is specified as the number you want to send a text message to, From is (and MUST BE) your Twilio phone number, and the Body contains the message
+   that you want to send.  
+   
+   After you have successfully triggered your Twilio Function and proved that it can send a text message, now it is time to set up your 
+   Arduino and try to send your POST using your SIM module. 
+   
+   
+  
    
    
    
