@@ -2,6 +2,8 @@
    DISCLAIMER: I am still learning and relatively new to programming.  If you are an experienced programmer,
    you will almost certainly see something in my code that is sub-optimal.  Please let me know if you see things that I should be doing differently or more efficiently. 
    
+   Shoutout to Jwallis for getting me on the right path with Twilio and using POST requests.  Thanks! 
+   
    BIG IMPORTANT NOTE THAT YOU SHOULD READ BEFORE DOING STUFF!  This method of sending a message relies on a public endpoint that is NOT protected by a password.  This means 
    that ANYONE with the address of your endpoint can send a POST request to it and send a message.  Obviously, this is not ideal.  I did it this way because 
    using HTTP on a SIM module with an Arduino proved to be far easier than using HTTPS.  As I learn more, I'll be trying to adapt it to HTTPS.   
