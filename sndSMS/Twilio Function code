@@ -1,4 +1,4 @@
-// This code was written entirely by the Twilio support gurus Matt Jackson and Dan Pass.  They are wizards.
+// This code was given to me by the Twilio support gurus Matt Jackson and Dan Pass.  They are wizards.
 // Copy and paste this Function to use as your Twilio Function.
 
 exports.handler = function (context, event, callback) {
