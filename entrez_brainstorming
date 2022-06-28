@@ -1,0 +1,9 @@
+Goals: user enters two medical conditions to search for overlapping differential expression.  Example: the user enters atopic dermatitis and allergic rhinitis.  
+These conditions are individually run through the E-utilities search to retrieve a list of related articles.  This list is entered TO BE CONTINUED.....
+
+Using E-utilities (https://www.ncbi.nlm.nih.gov/books/NBK25500/), Entrez databases can be searched programmatically.  It looks like individual records can be downloaded via the FTP directory (https://www.ncbi.nlm.nih.gov/geo/info/geo_paccess.html#FTP).  
+
+Need to learn how to use each of the types of datasets available: SOFT, MINiML, Matrix, etc.  (https://www.ncbi.nlm.nih.gov/geo/download/?acc=GSE203366)
+
+
+
