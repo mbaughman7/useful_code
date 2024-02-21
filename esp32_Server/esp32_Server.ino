@@ -2,7 +2,7 @@
 #include <WebServer.h>
 
 // Replace with your network credentials
-const char* ssid = "<MY HOME SSID>";
+const char* ssid = "MY HOME SSID";
 const char* password = "MY WIFI PASSWORD";
 
 
